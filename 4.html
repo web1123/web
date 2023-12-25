@@ -1,0 +1,102 @@
+<html>
+<head>
+<title>Login</title>
+  <script>
+      function check()
+      {
+         user=document.getElementById("username").value;
+         pass=document.getElementById("password").value;
+         if (user.match("") && pass.match(""))
+      {
+          document.write("Hello<br>");
+          document.write(user);
+          alert("Hello")
+          location="index.html"
+        }
+        else
+        {
+          document.write("Error<br>");
+          alert("ERROR User Name or Password")
+        }
+      }
+    </script>
+</head>
+<style>
+body {background-color:rgb(3, 167, 182)}
+
+         button {float:Aligne center;
+             font-family: cursive
+             ;font-size: 25px;
+        }
+        ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 80%;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:rgb(99, 161, 242);
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+li {
+  float:left;
+}
+
+li a {
+  display:block;
+  color: black;
+  padding: 10px 65px;
+  text-decoration: none;
+  font-size: 25px;
+   font-family:  cursive;
+}
+
+li a:hover:not(.active) {
+  background-color:rgb(97, 176, 255);
+   font-family: cursive;
+}
+
+.active {
+  background-color:rgb(88, 222, 255);
+}
+h1 {
+  color:black;
+  font-size: 35px;
+   font-family:  cursive;
+}
+</style>
+</head>
+
+<center> <div style="background-color:rgb(207, 220, 240); height:1000px;  font-family: cursive;font-size: 30px; "> 
+<h1><img src="s8.png" height="240" width="240"></h1>
+    <h1>Login</h1>
+   
+<tr> <td>Enter User Name<td><input id="username"></td><p>
+<tr> <td>Enter Password<td><input type="password" id="password"></td><p>
+<tr> <td> </td>
+<tr align="right"> <td> <button onclick="check()">Login</button>
+<h6><img src="s9.png" height="240" width="240"></h6>
+</center>
+
+<body>
+<ul>
+  <li> <a href="H.html">home </a></li>
+  <li> <a href="A.html">About</a></li>
+  <li> <a href="C.html">classes</a>  </li>
+  <li><a href="B.html">BMI</a></li>
+  <li><a href="P.html">Price</a></li>
+  <li><a class="active">Long in</a></li>
+  <li><a href="s.html">Subscribe</li>
+</ul>
+</body>
+</html>
