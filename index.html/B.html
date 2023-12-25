@@ -1,0 +1,143 @@
+<html>
+<head>
+	<style>
+		 button {float:Aligne center;
+             font-family: cursive
+             ;font-size: 25px;
+        }
+  h6{
+    color:rgb(3, 167, 182) ;
+  }
+  table {
+            width: 50%;        
+            font-family:cursive;
+            border-collapse: collapse;
+            font-size:20px;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+            border-top: 1px solid #dee2e6;
+        }
+        tbody tr:nth-child(odd) {
+            background-color: #f2f2f2;
+        }
+body {background-color:rgb(3, 167, 182);  }
+ ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 80%;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:rgb(99, 161, 242);
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+li {
+  float: left;
+}
+li a {
+  display:block;
+  color: black;
+  padding: 10px 65px;
+  text-decoration: none;
+  font-size: 25px;
+   font-family: cursive;
+}
+
+li a:hover:not(.active) {
+  background-color:rgb(97, 176, 255);
+   font-family:  cursive;
+}
+
+.active {
+  background-color:rgb(88, 222, 255);
+}
+h1 {
+  color:black;
+  font-size: 25px;
+   font-family:cursive;
+}
+h2 {
+  color:black;
+  font-size: 20px;
+   font-family:  cursive;
+}
+h3 {
+  color:black;
+  font-size: 20px;
+   font-family:  cursive;
+}
+h5 {
+  color:rgb(240, 229, 207);
+  
+}
+
+
+</style>
+<div style="background-color:rgb(109, 167, 255); height:1000px;">
+<script >
+function calc()
+{
+h=document.getElementById("height").value;
+w=document.getElementById("weight").value;
+h=h/100;
+BMI=w/(h*h);
+document.getElementById("bmi").value=BMI;
+if (BMI<18.5)
+Status="Under Weight";
+else if (BMI<25)
+Status="Normal";
+else if (BMI<30)
+Status="Over Weight";
+else
+Status="Obese";
+document.getElementById("status").value=Status;
+}
+</script>
+</head>
+<body> 
+
+<body>
+
+
+<h1>......................</h1>
+<h5>......................</h5>
+<h1>In order to know the membership that suits you and the exercises that you </h1>
+<h1>need to get a strong and healthy body, we advise you to know the body mass index.</h1>
+
+
+<h2>The Body Mass Index (BMI) is a measure of body fat based on weight and height. It is calculated by dividing the weight in kilograms by the square of the height in meters. The resulting value is used to classify individuals as underweight, normal weight, or overweight. The World Health Organization provides BMI ranges for adults to determine whether a person is at a healthy weight for their height. Use the BMI calculator to assess your fitness level and choose an appropriate exercise routine for a strong and healthy body.
+This image shows the BMI values recommended by the World Health
+Organization for women and men 20 years of age and older:</h2>
+  <center><h6><img src="BMI.jpg" height="400" width="700" ></h6></center>
+  <center><h3>To determine your BMI, you have to put your height and weight, then click Calculate, and it will appear for you</h3></center>
+<center><table border="4">
+<tr> <td>Enter Height=</td> <td><input id="height">cm</td></tr>
+<tr> <td>Enter Weight=</td> <td><input id="weight">kg</td></tr>
+<tr bgcolor="pink"> <td>BMI=</td><td><input id="bmi"></td></tr>
+<tr bgcolor="pink"> <td>Status=</td><td><input id="status"></td></tr>
+<tr> <td><button onclick="calc()">Calculate</td></button></table></center>
+</head>
+
+  <ul>
+  <li> <a href="H.html">home </a></li>
+  <li> <a href="A.html">About</a></li>
+  <li> <a href="C.html">classes</a>  </li>
+  <li><a class="active">BMI</a></li>
+  <li><a href="P.html">Price</a></li>
+  <li><a href="L.html">Long in</a></li>
+  <li><a href="s.html">Subscribe</li>
+</ul> 
+</body>
+</html>
